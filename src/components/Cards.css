@@ -1,0 +1,145 @@
+.grandparent{
+    width: 100%;
+
+}
+.parent{
+margin: 5px;
+height: auto;
+width: 95%;
+
+}
+
+.child{
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* width: 100%; */
+
+
+}
+.btnmain{
+    width: 20%;
+   display: flex;
+   justify-content:start ;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+   padding-top: 50px;
+}
+.btn{
+    text-decoration: none;
+    padding: 9px 20px;
+    width: 50%;
+    color: #fff;
+    transition: all ease-in-out 0.4s;
+    background-color: #555;
+    border-radius: 7px;
+    font-size: large;
+    width: 20%;
+
+}
+
+.btn:hover {
+    background-color: #087ea4;
+}
+
+/* card  */
+
+.productsCard {
+    width: 75%;
+    margin: 30px auto 10px auto;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    gap: 20px;
+}
+
+.productCard {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #dd5709;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(238, 79, 6, 0.836);
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+}
+
+.productTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.productPrice {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.productDescription {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.viewBtn {
+    text-decoration: none;
+    padding: 9px 15px;
+    color: #fff;
+    transition: all ease-in-out 0.4s;
+    background-color: #555;
+    border-radius: 7px;
+}
+.productCard img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.viewBtn:hover {
+    background-color: #087ea4;
+}
+
+
+
+ 
+
+
+@media only screen and (max-width: 760px) {
+    .child {
+        /* flex-direction: row; */
+        height: auto;
+        width: 100%;
+
+    }
+    .productCard {
+        width: 230px;
+        /* padding: 20px; */
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        background-color: #fff;
+        overflow: hidden;
+        transition: transform 0.2s ease-in-out;
+        gap: 20px;
+        border: 1px solid #dd5709;
+        margin-left: 40px;
+        
+        
+    }
+
+    .btnmain {
+    padding-left: 20px;
+    margin-left: 20px;
+    }
+}

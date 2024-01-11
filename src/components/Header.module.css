@@ -1,0 +1,142 @@
+header {
+  position: relative;
+padding-top: 40px;
+overflow: hidden; /* Hide scrollbars */
+margin-top: 20px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fc4a1a;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+  padding-bottom: 40px;
+  gap: 40px;
+
+}
+
+.header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+font-size: calc(1.5rem + 1.5vw);
+font-weight: 700;
+line-height: 60px;
+color: var(--heading-color);
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+padding: 130px 0 0px 60px; 
+
+
+}
+
+.header h1 span {
+  display: block;
+  line-height: 61.4px;
+  font-size: 48px;
+  color: white !important;
+
+
+}
+
+h1 span:nth-child(1) {
+  font-weight: 700;
+  font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-size: calc(1.5rem + 1.5vw);
+
+font-size: 48px;
+}
+
+h1 span:nth-child(2),
+h1 span:nth-child(3) {
+  font-weight: 700;
+  font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+color: rgb(167, 63, 63);
+}
+
+.header h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55%;
+  height: 1px;
+  background: var(--color-white);
+}
+
+.header-left p {
+  margin: 3rem 0;
+  color: var(--color-white);
+  width: 70%;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.1112px;
+  font-weight: 500;
+  margin-bottom: 26px;
+  padding: 50px 0 20px 60px; 
+
+}
+
+/* img{
+  width: 100%;
+  padding: 100px 50px 0 0;
+} */
+
+.headerRight img {
+  width: 100%;
+  padding: 100px 50px 0 0;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(25%);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header h1 {
+    font-size: 3rem;
+    padding: 30px 0 0px 20px; 
+
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header-left,
+  .header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .header-left {
+    margin-bottom: 4rem;
+    
+  }
+  img{
+    padding: 20px 0px 0 10px;
+  }
+
+  .header h1::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header-right img {
+    width: 80%;
+
+  }
+}

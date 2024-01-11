@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'PT Sans', sans-serif; */
+  /* position: sticky; */
+  }
+
+ 
+.WhatsAppWidgetContainer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+  .WhatsAppWidgetContainer {
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .WhatsAppWidgetContainer button {
+    /* Apply specific styles for the button on smaller screens */
+    padding: 8px;
+    font-size: 14px;
+    /* Add any other styles as needed */
+  }
+}
