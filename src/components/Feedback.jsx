@@ -4,8 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
+import manImage from '../assets/man.jpeg';
+import whatsappImage from '../assets/WhatsApp Image.jpeg';
+import whatsappImage2 from '../assets/WhatsApp Image 2023-12-27 at 3.24.50 PM.jpeg';
+import heroImage from '../assets/hero.jpg';
 
 function Feedback() {
     useEffect(() => {
@@ -74,7 +76,7 @@ const data = [
 
     {
         name: "Ayan Shaikh",
-        img: "src/assets/man.jpeg",
+        img: manImage,
         review: "Great experience. Did a great job fixed my screen and charging port in about 20 minutes and gave me a free screen protector. 10/10 would recommend.",
 
     },
@@ -82,7 +84,7 @@ const data = [
 
     {
         name: "Sufiyan Mansoor",
-        img: "src/assets/WhatsApp Image.jpeg",
+        img: whatsappImage,
         review: "Excellent customer service, phone was collected from my place, repaired and delivered within a span of 5 hours...Great experience. Good luck.. 10/10..",
 
     },
@@ -90,14 +92,14 @@ const data = [
 
     {
         name: "Ahmed",
-        img: "src/assets/WhatsApp Image 2023-12-27 at 3.24.50 PM.jpeg",
+        img: whatsappImage2,
         review: "Great service, the guy comes at your doorstep to pick the item you need repaired, worked well with my busy schedule. Got my Apple Watch SE ..",
 
     },
 
     {
         name: "Ali Khan",
-        img: "src/assets/hero.jpg",
+        img: heroImage,
         review: "Great service, the guy comes at your doorstep to pick the item you need repaired, worked well with my busy schedule. Got my Apple Watch SE..",
 
     }
